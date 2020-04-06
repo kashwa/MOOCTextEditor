@@ -70,12 +70,14 @@ public abstract class Document {
 		char[] cArray = word.toCharArray();
 		
 		for (int i=0; i < cArray.length; i++) {
+			
 			// if last char = 'e'
 			if (i == cArray.length-1 && Character.toLowerCase(cArray[i]) == 'e'
 					&& newSyllable && numSyllables > 0) {
 				numSyllables--;
 			}
 			
+			// if new Syllable
 			if (newSyllable && vowels.indexOf(Character.toLowerCase(cArray[i])) >= 0) {
 				newSyllable = false;
 				numSyllables++;
