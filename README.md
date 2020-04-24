@@ -39,7 +39,12 @@ document.BasicDocument.java
 
 Week 2 : Efficiency Analysis and Benchmarking
 =============================================
-`document.EfficientDocument.java`
+```
+document.EfficientDocument.java
+
+EfficientDocument VS BasicDocument Timing Analysis from Source-Code:
+```
+<img src = "./data/benchmarking.PNG">
 
 Week 3 : Interfaces, Linked Lists vs. Arrays, and Correctness
 =============================================================
