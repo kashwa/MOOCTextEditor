@@ -1,6 +1,3 @@
-/**
- * 
- */
 package textgen;
 
 import static org.junit.Assert.*;
@@ -124,7 +121,6 @@ public class MyLinkedListTester {
 	public void testAddEnd()
 	{
         // TODO: implement this test
-		
 	}
 
 	
