@@ -19,6 +19,7 @@ public class MyLinkedListTester {
 	MyLinkedList<Integer> emptyList;
 	MyLinkedList<Integer> longerList;
 	MyLinkedList<Integer> list1;
+	MyLinkedList<Integer> addList;
 	
 	/**
 	 * @throws java.lang.Exception
@@ -39,6 +40,7 @@ public class MyLinkedListTester {
 		list1.add(65);
 		list1.add(21);
 		list1.add(42);
+		addList = new MyLinkedList<Integer>();
 		
 	}
 
@@ -120,7 +122,21 @@ public class MyLinkedListTester {
 	@Test
 	public void testAddEnd()
 	{
-        // TODO: implement this test
+        try{
+        	addList.add(null);
+        	
+        	fail("Check invalid null element!");
+        } catch(NullPointerException e){}
+        
+        boolean state = addList.add(0);
+        assertEquals("check state correct", true, state);
+        assertEquals("check value is correct", (Integer)0, addList.get(0));
+        assertEquals("check size is correct", 1, addList.size());
+        
+        state = addList.add(1);
+        assertEquals("check state correct", true, state);
+        assertEquals("check value is correct", (Integer)1, addList.get(1));
+        assertEquals("check size is correct", 2, addList.size());
 	}
 
 	
