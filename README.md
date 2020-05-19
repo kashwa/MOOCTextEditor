@@ -64,6 +64,7 @@ spelling.Dictionary*.java
 spelling.AutoCompleteDictionaryTrie.java
 spelling.TrieNode.java
 ```
+<img src = "./data/bstvslinkedlist.PNG">
 
 Week 5 : Hash Maps and Edit Distance
 ====================================
