@@ -32,6 +32,7 @@ public class DictionaryBenchmarking {
 		int start = 50000;
 		
 		String notInDictionary = "notaword";
+		System.out.println("NumToCheck" + "\t" + "LinkedList" + "\t" + "BST");
 		
 		// TODO: Play around with the numbers above and graph the output to see trends in the data
 		for (int numToCheck = start; numToCheck < numSteps*increment + start; 
